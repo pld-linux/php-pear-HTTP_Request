@@ -2,17 +2,20 @@
 %define		_class		HTTP
 %define		_subclass	Request
 %define		_pearname	%{_class}_%{_subclass}
+%define		_status		stable
 Summary:	%{_pearname} - provides an easy way to perform HTTP requests
 Summary(pl):	%{_pearname} - daje ³atwy sposób przygotowania wywo³añ HTTP
 Name:		php-pear-%{_pearname}
-Version:	1.0.2
-Release:	2
+Version:	1.1.1
+Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
+Requires:	php-pear-Net_URL >= 1.0.7
+Requires:	php-pear-Net_Socket >= 1.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -20,9 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Supports GET/POST/HEAD/TRACE/PUT/DELETE, Basic authentication, Proxy,
 Proxy Authentication etc.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Obs³uguje metody GET/POST/HEAD/TRACE/PUT/DELETE, motodê
 uwierzytelniania Basic, Proxy, uwierzytelnianie Proxy itp.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
