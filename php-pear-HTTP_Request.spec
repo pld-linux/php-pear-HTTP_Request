@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTTP
 %define		_subclass	Request
-%define		_pearname	%{_class}_%{_subclass}
 %define		_status		stable
+%define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - provides an easy way to perform HTTP requests
 Summary(pl):	%{_pearname} - daje ³atwy sposób przygotowania wywo³añ HTTP
 Name:		php-pear-%{_pearname}
