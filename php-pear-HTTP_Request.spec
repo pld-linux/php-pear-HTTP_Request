@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Supports GET/POST/HEAD/TRACE/PUT/DELETE, Basic authentication, Proxy,
 Proxy Authentication etc.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Obs³uguje metody GET/POST/HEAD/TRACE/PUT/DELETE, motodê
