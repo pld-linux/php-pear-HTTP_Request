@@ -2,8 +2,8 @@
 %define		_class		HTTP
 %define		_subclass	Request
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	HTTP_Request - Provides an easy way to perform HTTP requests
-Summary(pl):	HTTP_Request - Daje ³atwy sposób przygotowania wywo³añ HTTP
+Summary:	%{_class}_%{_subclass} - Provides an easy way to perform HTTP requests
+Summary(pl):	%{_class}_%{_subclass} - Daje ³atwy sposób przygotowania wywo³añ HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	1
