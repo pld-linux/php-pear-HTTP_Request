@@ -3,15 +3,16 @@
 %define		_subclass	Request
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - provides an easy way to perform HTTP requests
 Summary(pl):	%{_pearname} - daje ³atwy sposób przygotowania wywo³añ HTTP
 Name:		php-pear-%{_pearname}
-Version:	1.2
+Version:	1.2.1
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	103f7599fc2d4f6be8920340571fd361
+# Source0-md5:	3053a5c7be6a32db362fbcccdba56382
 URL:		http://pear.php.net/package/HTTP_Request/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
