@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - provides an easy way to perform HTTP requests
 Summary(pl):	%{_pearname} - daje ³atwy sposób przygotowania wywo³añ HTTP
 Name:		php-pear-%{_pearname}
-Version:	1.1.1
+Version:	1.2
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
-# Source0-md5:	7afcb8121ea5ed306a4f21f9d69c0941
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	103f7599fc2d4f6be8920340571fd361
 URL:		http://pear.php.net/package/HTTP_Request/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -37,9 +37,10 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install %{_pearname}-%{version}/%{_subclass}*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -47,4 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/docs/*
+%dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}
