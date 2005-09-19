@@ -14,7 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	0dfacef0ab8e9ab5c3948c959180973c
 URL:		http://pear.php.net/package/HTTP_Request/
-BuildRequires:	rpm-php-pearprov >= 4.4.2-10.2
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-Net_URL >= 1.0.7
 Requires:	php-pear-Net_Socket >= 1.0
