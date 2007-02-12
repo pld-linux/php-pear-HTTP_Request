@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - provides an easy way to perform HTTP requests
-Summary(pl):	%{_pearname} - daje ³atwy sposób przygotowania wywo³añ HTTP
+Summary(pl.UTF-8):   %{_pearname} - daje Å‚atwy sposÃ³b przygotowania wywoÅ‚aÅ„ HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.4.0
 Release:	1
@@ -29,8 +29,8 @@ Proxy Authentication etc.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Obs³uguje metody GET/POST/HEAD/TRACE/PUT/DELETE, motodê
+%description -l pl.UTF-8
+ObsÅ‚uguje metody GET/POST/HEAD/TRACE/PUT/DELETE, motodÄ™
 uwierzytelniania Basic, Proxy, uwierzytelnianie Proxy itp.
 
 Ta klasa ma w PEAR status: %{_status}.
