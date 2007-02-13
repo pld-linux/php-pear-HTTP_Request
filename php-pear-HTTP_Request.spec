@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - provides an easy way to perform HTTP requests
-Summary(pl.UTF-8):   %{_pearname} - daje łatwy sposób przygotowania wywołań HTTP
+Summary(pl.UTF-8):	%{_pearname} - daje łatwy sposób przygotowania wywołań HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.4.0
 Release:	1
