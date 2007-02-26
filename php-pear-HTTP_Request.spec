@@ -30,7 +30,7 @@ Proxy Authentication etc.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
-Obsługuje metody GET/POST/HEAD/TRACE/PUT/DELETE, motodę
+Obsługuje metody GET/POST/HEAD/TRACE/PUT/DELETE, metodę
 uwierzytelniania Basic, Proxy, uwierzytelnianie Proxy itp.
 
 Ta klasa ma w PEAR status: %{_status}.
