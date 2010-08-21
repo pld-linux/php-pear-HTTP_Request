@@ -7,19 +7,19 @@ Summary:	%{_pearname} - provides an easy way to perform HTTP requests
 Summary(pl.UTF-8):	%{_pearname} - daje łatwy sposób przygotowania wywołań HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.4.4
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	e7590ac0b912362b7ce85e247aefa8a6
 URL:		http://pear.php.net/package/HTTP_Request/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.3
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-Net_Socket >= 1.0.2
+Requires:	php-pear-Net_Socket >= 1.0.7
 Requires:	php-pear-Net_URL >= 1.0.12
-Requires:	php-pear-PEAR-core >= 1:1.4.0-0.b1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
